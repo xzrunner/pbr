@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\pbr\CodeGenerator.h" />
+    <ClInclude Include="..\..\..\include\pbr\Context.h" />
+    <ClInclude Include="..\..\..\include\pbr\Setting.h" />
+    <ClInclude Include="..\..\..\include\pbr\MaterialBuilder.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\DriverEnums.h" />
+    <ClInclude Include="..\..\..\include\pbr\GLSLTools.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\builtinResource.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\ASTHelpers.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\ShaderGenerator.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\MaterialInfo.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\MaterialEnums.h" />
+    <ClInclude Include="..\..\..\include\pbr\EngineEnums.h">
+      <Filter>builder\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\SamplerBindingMap.h">
+      <Filter>builder\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\SamplerInterfaceBlock.h">
+      <Filter>builder\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\SibGenerator.h">
+      <Filter>builder\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\UniformInterfaceBlock.h">
+      <Filter>builder\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pbr\Variant.h" />
+    <ClInclude Include="..\..\..\include\pbr\UibGenerator.h">
+      <Filter>builder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\CodeGenerator.cpp" />
+    <ClCompile Include="..\..\..\source\Context.cpp" />
+    <ClCompile Include="..\..\..\source\MaterialBuilder.cpp">
+      <Filter>builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\GLSLTools.cpp">
+      <Filter>builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ASTHelpers.cpp">
+      <Filter>builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ShaderGenerator.cpp">
+      <Filter>builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\SamplerBindingMap.cpp">
+      <Filter>builder\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\SamplerInterfaceBlock.cpp">
+      <Filter>builder\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\SibGenerator.cpp">
+      <Filter>builder\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\UniformInterfaceBlock.cpp">
+      <Filter>builder\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\UibGenerator.cpp">
+      <Filter>builder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="builder">
+      <UniqueIdentifier>{f2186e4b-9d49-429d-9d93-e1ed5dd611f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="builder\bridge">
+      <UniqueIdentifier>{a83904be-efd0-4ab7-87bc-d98467ca738e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{ef4ae5da-2bce-4601-a045-ed3098a2f4cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\shaders\ambient_occlusion.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\brdf.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_getters.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_graphics.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_lighting.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_material.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_math.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_shading.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\common_types.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\conversion_functions.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\depth_main.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\depth_main.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\dithering.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\fxaa.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\getters.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\getters.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\inputs.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\inputs.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\light_directional.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\light_indirect.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\light_punctual.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\main.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\main.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\material_inputs.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\material_inputs.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\post_process.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\post_process.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shading_lit.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shading_model_cloth.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shading_model_standard.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shading_model_subsurface.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shading_parameters.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shading_unlit.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shadowing.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\shadowing.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\..\..\shaders\tone_mapping.fs">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\pbr\ASTHelpers.h" />
+    <ClInclude Include="..\..\..\include\pbr\builtinResource.h" />
+    <ClInclude Include="..\..\..\include\pbr\CodeGenerator.h" />
+    <ClInclude Include="..\..\..\include\pbr\Context.h" />
+    <ClInclude Include="..\..\..\include\pbr\DriverEnums.h" />
+    <ClInclude Include="..\..\..\include\pbr\EngineEnums.h" />
+    <ClInclude Include="..\..\..\include\pbr\GLSLTools.h" />
+    <ClInclude Include="..\..\..\include\pbr\MaterialBuilder.h" />
+    <ClInclude Include="..\..\..\include\pbr\MaterialEnums.h" />
+    <ClInclude Include="..\..\..\include\pbr\MaterialInfo.h" />
+    <ClInclude Include="..\..\..\include\pbr\SamplerBindingMap.h" />
+    <ClInclude Include="..\..\..\include\pbr\SamplerInterfaceBlock.h" />
+    <ClInclude Include="..\..\..\include\pbr\Setting.h" />
+    <ClInclude Include="..\..\..\include\pbr\ShaderGenerator.h" />
+    <ClInclude Include="..\..\..\include\pbr\SibGenerator.h" />
+    <ClInclude Include="..\..\..\include\pbr\UibGenerator.h" />
+    <ClInclude Include="..\..\..\include\pbr\UniformInterfaceBlock.h" />
+    <ClInclude Include="..\..\..\include\pbr\Variant.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\ASTHelpers.cpp" />
+    <ClCompile Include="..\..\..\source\CodeGenerator.cpp" />
+    <ClCompile Include="..\..\..\source\Context.cpp" />
+    <ClCompile Include="..\..\..\source\GLSLTools.cpp" />
+    <ClCompile Include="..\..\..\source\MaterialBuilder.cpp" />
+    <ClCompile Include="..\..\..\source\SamplerBindingMap.cpp" />
+    <ClCompile Include="..\..\..\source\SamplerInterfaceBlock.cpp" />
+    <ClCompile Include="..\..\..\source\ShaderGenerator.cpp" />
+    <ClCompile Include="..\..\..\source\SibGenerator.cpp" />
+    <ClCompile Include="..\..\..\source\UibGenerator.cpp" />
+    <ClCompile Include="..\..\..\source\UniformInterfaceBlock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\shaders\ambient_occlusion.fs" />
+    <None Include="..\..\..\shaders\brdf.fs" />
+    <None Include="..\..\..\shaders\common_getters.fs" />
+    <None Include="..\..\..\shaders\common_graphics.fs" />
+    <None Include="..\..\..\shaders\common_lighting.fs" />
+    <None Include="..\..\..\shaders\common_material.fs" />
+    <None Include="..\..\..\shaders\common_math.fs" />
+    <None Include="..\..\..\shaders\common_shading.fs" />
+    <None Include="..\..\..\shaders\common_types.fs" />
+    <None Include="..\..\..\shaders\conversion_functions.fs" />
+    <None Include="..\..\..\shaders\depth_main.fs" />
+    <None Include="..\..\..\shaders\depth_main.vs" />
+    <None Include="..\..\..\shaders\dithering.fs" />
+    <None Include="..\..\..\shaders\fxaa.fs" />
+    <None Include="..\..\..\shaders\getters.fs" />
+    <None Include="..\..\..\shaders\getters.vs" />
+    <None Include="..\..\..\shaders\inputs.fs" />
+    <None Include="..\..\..\shaders\inputs.vs" />
+    <None Include="..\..\..\shaders\light_directional.fs" />
+    <None Include="..\..\..\shaders\light_indirect.fs" />
+    <None Include="..\..\..\shaders\light_punctual.fs" />
+    <None Include="..\..\..\shaders\main.fs" />
+    <None Include="..\..\..\shaders\main.vs" />
+    <None Include="..\..\..\shaders\material_inputs.fs" />
+    <None Include="..\..\..\shaders\material_inputs.vs" />
+    <None Include="..\..\..\shaders\post_process.fs" />
+    <None Include="..\..\..\shaders\post_process.vs" />
+    <None Include="..\..\..\shaders\shading_lit.fs" />
+    <None Include="..\..\..\shaders\shading_model_cloth.fs" />
+    <None Include="..\..\..\shaders\shading_model_standard.fs" />
+    <None Include="..\..\..\shaders\shading_model_subsurface.fs" />
+    <None Include="..\..\..\shaders\shading_parameters.fs" />
+    <None Include="..\..\..\shaders\shading_unlit.fs" />
+    <None Include="..\..\..\shaders\shadowing.fs" />
+    <None Include="..\..\..\shaders\shadowing.vs" />
+    <None Include="..\..\..\shaders\tone_mapping.fs" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>3.pbr</ProjectName>
+    <ProjectGuid>{F51C8E88-A274-460E-BD21-F4661A09AE10}</ProjectGuid>
+    <RootNamespace>pbr</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26730.12</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\pbr\x86\Debug\</OutDir>
+    <IntDir>..\pbr\x86\Debug\obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\pbr\x86\Release\</OutDir>
+    <IntDir>..\pbr\x86\Release\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..;..\..\..\include;..\..\..\..\external\glslang\include;..\..\..\..\external\glm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;EASY_EDITOR;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..;..\..\..\include;..\..\..\..\external\glslang\include;..\..\..\..\external\glm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;EASY_EDITOR;__STDC_LIMIT_MACROS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

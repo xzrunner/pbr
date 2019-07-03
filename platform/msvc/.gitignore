@@ -1,0 +1,5 @@
+pbr/
+projects/*
+
+!projects/pbr.vcxproj
+!projects/pbr.vcxproj.filters
